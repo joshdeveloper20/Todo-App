@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Todo</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- 
+        - FONT AWESOME LINK
+     -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form class="todo-form">
+        <h2>Edit Todo</h2>
+        <div class="form-control control-id">
+          <label>Todo ID:</label>
+          <p class="todo-id"></p>
+        </div>
+        <div class="form-control">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            class="edit-todo-input"
+            name="name"
+            placeholder="Enter Todo..."
+          />
+        </div>
+        <div class="form-control completed-control">
+          <label for="completed">completed: </label>
+          <input
+            type="checkbox"
+            id="completed"
+            name="completed"
+            class="completed"
+          />
+        </div>
+        <button type="submit" class="btn submit-edit-btn">edit</button>
+
+        <div class="form-alert"></div>
+      </form>
+      <a href="index.html" class="back-link">back to tasks</a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./edit.js"></script>
+  </body>
+</html>
